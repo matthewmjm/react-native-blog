@@ -25,8 +25,12 @@ const CreateScreen = ({ navigation }) => {
                 onChangeText={(text) => setContent(text)} 
             />
             <Button 
-                onPress={() => addBlogPost(title, content)}
-                title="Add Blog Post" 
+                title="Add Blog Post"
+                onPress={() => {
+                    addBlogPost(title, content, () => {
+                        navigation.navigate('Index');
+                    });
+                }}
             />
         </View>
     );

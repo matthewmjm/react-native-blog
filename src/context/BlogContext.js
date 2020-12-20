@@ -54,30 +54,3 @@ export const { Context, Provider } = createDataContext(
     // []
     [{ title: 'Test Post', content: 'This is a test post', id: 1 }]
 );
-
-
-
-
-// const BlogContext = React.createContext();
-
-// export const BlogProvider = ({ children }) => {
-//     const [blogPosts, dispatch] = useReducer(blogReducer, []);
-//     const addBlogPost = () => {
-//         dispatch({ type: 'add_blogpost'});
-//     };
-//     return (
-//         <BlogContext.Provider value={{ data: blogPosts, addBlogPost }}>{children}</BlogContext.Provider>
-//     );
-// };
-
-// export default BlogContext;
-
-
-
-// const addBlogPost = () => {
-//     setBlogPosts([...blogPosts, { title: `Blog Post #${blogPosts.length + 1}`},])
-// };
-
-// return (
-//     <BlogContext.Provider value={{ data: blogPosts, addBlogPost }}>{children}</BlogContext.Provider>
-// );
